@@ -1,0 +1,8 @@
+int interleave(int arr[], int len) {
+  int n = len/2;
+  for (int i = 1; i < n; i++) { // my step no.
+    for (int j = 0; j < i; j++) { // no. of swaps
+      swap(arr, n-i+2*j, n-i+2*j+1);
+    }
+  }
+}
